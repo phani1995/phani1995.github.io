@@ -5,9 +5,7 @@ date: 2018-09-07
 ---
 another one
 Treansfer Learning technique is used to indentify tom and jerry.
-<html>
 
-<head>
 <meta http-equiv=Content-Type content="text/html; charset=windows-1252">
 <meta name=Generator content="Microsoft Word 15 (filtered)">
 <style>
@@ -134,9 +132,8 @@ ul
 -->
 </style>
 
-</head>
 
-<body lang=EN-US>
+
 
 <div class=WordSection1>
 
@@ -897,6 +894,6 @@ src="2018-09-11-Linear-Regression-using-Tensorflow-Estimator_files/image006.jpg"
 
 </div>
 
-</body>
 
-</html>
+
+
