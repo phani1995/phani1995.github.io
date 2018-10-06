@@ -6,7 +6,17 @@ date: 2018-09-07
 another one
 Treansfer Learning technique is used to indentify tom and jerry.
 
-<div class=WordSection1>
+<p >Linear Regression is the process of fitting a line to the
+dataset.</p>
+
+<p >&nbsp;</p>
+
+<p ><b><span style='font-size:18.0pt;line-height:107%'>Single
+Variable Linear Regression</span></b></p>
+
+<p >&nbsp;</p>
+
+
 
 <p class=MsoNormal style='text-align:justify'><b><span style='font-size:24.0pt;
 line-height:107%'>Linear Regression using Tensorflow Estimator</span></b></p>
