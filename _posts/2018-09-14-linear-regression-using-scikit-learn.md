@@ -2,7 +2,7 @@
 
 
 
-![Image not found](linear-regression-using-scikit-learn-images/image2.png)
+![Image not found](https://github.com/phanimadhusudhanthontepu/linear_regression/blob/master/docs/linear-regression-using-scikit-learn-images/image2.png)
 
 
 
