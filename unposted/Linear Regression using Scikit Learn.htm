@@ -1,0 +1,988 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;}
+p.MsoNormalCxSpFirst, li.MsoNormalCxSpFirst, div.MsoNormalCxSpFirst
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;}
+p.MsoNormalCxSpMiddle, li.MsoNormalCxSpMiddle, div.MsoNormalCxSpMiddle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;}
+p.MsoNormalCxSpLast, li.MsoNormalCxSpLast, div.MsoNormalCxSpLast
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;}
+h1
+	{margin-top:20.0pt;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:normal;}
+h1.CxSpFirst
+	{margin-top:20.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:normal;}
+h1.CxSpMiddle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:normal;}
+h1.CxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:20.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:normal;}
+h2
+	{margin-top:.25in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:normal;}
+h2.CxSpFirst
+	{margin-top:.25in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:normal;}
+h2.CxSpMiddle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:normal;}
+h2.CxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:6.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	font-weight:normal;}
+h3
+	{margin-top:16.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Arial",sans-serif;
+	color:#434343;
+	font-weight:normal;}
+h3.CxSpFirst
+	{margin-top:16.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Arial",sans-serif;
+	color:#434343;
+	font-weight:normal;}
+h3.CxSpMiddle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Arial",sans-serif;
+	color:#434343;
+	font-weight:normal;}
+h3.CxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Arial",sans-serif;
+	color:#434343;
+	font-weight:normal;}
+h4
+	{margin-top:14.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;
+	font-weight:normal;}
+h4.CxSpFirst
+	{margin-top:14.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;
+	font-weight:normal;}
+h4.CxSpMiddle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;
+	font-weight:normal;}
+h4.CxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;
+	font-weight:normal;}
+h5
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;
+	font-weight:normal;}
+h5.CxSpFirst
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;
+	font-weight:normal;}
+h5.CxSpMiddle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;
+	font-weight:normal;}
+h5.CxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;
+	font-weight:normal;}
+h6
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;
+	font-weight:normal;
+	font-style:italic;}
+h6.CxSpFirst
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;
+	font-weight:normal;
+	font-style:italic;}
+h6.CxSpMiddle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;
+	font-weight:normal;
+	font-style:italic;}
+h6.CxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:26.0pt;
+	font-family:"Arial",sans-serif;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:26.0pt;
+	font-family:"Arial",sans-serif;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:26.0pt;
+	font-family:"Arial",sans-serif;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:26.0pt;
+	font-family:"Arial",sans-serif;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:16.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:15.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;}
+p.MsoSubtitleCxSpFirst, li.MsoSubtitleCxSpFirst, div.MsoSubtitleCxSpFirst
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:15.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;}
+p.MsoSubtitleCxSpMiddle, li.MsoSubtitleCxSpMiddle, div.MsoSubtitleCxSpMiddle
+	{margin:0in;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:15.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;}
+p.MsoSubtitleCxSpLast, li.MsoSubtitleCxSpLast, div.MsoSubtitleCxSpLast
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:16.0pt;
+	margin-left:0in;
+	line-height:115%;
+	page-break-after:avoid;
+	font-size:15.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;}
+span.MsoPlaceholderText
+	{color:gray;}
+.MsoChpDefault
+	{font-family:"Arial",sans-serif;}
+.MsoPapDefault
+	{line-height:115%;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><a name="_gjdgxs"></a><span lang=EN style='font-size:24.0pt;
+line-height:115%'>Linear Regression using Scikit Learn</span></p>
+
+<p class=MsoNormal><span lang=EN style='font-size:24.0pt;line-height:115%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img width=624 height=430 id=image11.png
+src="Linear%20Regression%20using%20Scikit%20Learn_files/image001.jpg"></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><b><span lang=EN
+style='font-size:18.0pt;line-height:115%'>The Theory</span></b></p>
+
+<p class=MsoNormal><span lang=EN>Linear Regression is the process of fitting a
+line to the dataset.</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN style='font-size:18.0pt;line-height:115%'>Single
+Variable Linear Regression</span></b></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN style='font-size:18.0pt;line-height:115%'>The
+Mathematics</span></b></p>
+
+<p class=MsoNormal><span lang=EN>The equation of Line is</span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+lang=EN style='font-size:11.0pt;line-height:115%;font-family:"Arial",sans-serif'><img
+width=87 height=20
+src="Linear%20Regression%20using%20Scikit%20Learn_files/image002.png"></span></p>
+
+<p class=MsoNormal><span lang=EN>Where,</span></p>
+
+<p class=MsoNormal><span lang=EN> y = dependent variable</span></p>
+
+<p class=MsoNormal><span lang=EN> X = independent variable</span></p>
+
+<p class=MsoNormal><span lang=EN>C = intercept </span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>The algorithm is trying to fit a line to the
+data by adjusting the values of m and c. Its Objective is to attain to a value
+of m such that for any given value of x it would be properly predicting the
+value of y.</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>There are various ways in which we can attain
+the values of m and c </span></p>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormal style='border:none'><span lang=EN style='color:black'>Statistical
+     approach</span></li>
+ <li class=MsoNormal style='border:none'><span lang=EN style='color:black'>Iterative
+     approach</span></li>
+</ol>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>Here we are using a scikit learn framework
+which internally uses iterative approach to attain the linear regression </span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN style='font-size:18.0pt;line-height:115%'>The
+Dataset</span></b><span lang=EN style='font-size:18.0pt;line-height:115%'> </span></p>
+
+<p class=MsoNormal><span lang=EN>Dataset consists of two columns namely X and y</span></p>
+
+<p class=MsoNormal><span lang=EN>Where</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>For <span style='background:white'>List Price
+Vs. Best Price for a New GMC Pickup</span> dataset</span></p>
+
+<p class=MsoNormal><span lang=EN>X = <span style='background:white'>List price
+(in $1000) for a GMC pickup truck</span></span></p>
+
+<p class=MsoNormal><span lang=EN>Y = <span style='background:white'>Best price
+(in $1000) for a GMC pickup truck</span></span></p>
+
+<p class=MsoNormal><span lang=EN>The data is taken from <i><span
+style='background:white'>Consumer’s Digest.</span></i></span></p>
+
+<p class=MsoNormal><i><span lang=EN style='background:white'>&nbsp;</span></i></p>
+
+<p class=MsoNormal><span lang=EN>For Fire and Theft in Chicago </span></p>
+
+<p class=MsoNormal><span lang=EN>X = fires per 100 housing units</span></p>
+
+<p class=MsoNormal><span lang=EN>Y = thefts per 1000 population within the same
+Zip code in the Chicago metro area</span></p>
+
+<p class=MsoNormal><span lang=EN>The data is taken from U.S Commission of Civil
+Rights.</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>For Auto Insurance in Sweden dataset</span></p>
+
+<p class=MsoNormal><span lang=EN>X = number of claims</span></p>
+
+<p class=MsoNormal><span lang=EN>Y = total payment for all the claims in
+thousands of Swedish Kronor</span></p>
+
+<p class=MsoNormal><span lang=EN>The data is taken from Swedish Committee on
+Analysis of Risk Premium in Motor Insurance.</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>For Gray Kangaroos dataset</span></p>
+
+<p class=MsoNormal><span lang=EN>X = <span style='background:white'>nasal
+length (mm ¥10)</span></span></p>
+
+<p class=MsoNormal><span lang=EN>Y = <span style='background:white'>nasal width
+(mm ¥ 10)</span><br>
+<span style='background:white'>for a male gray kangaroo from a random sample of
+such animals</span></span></p>
+
+<p class=MsoNormal><span lang=EN>The data is taken from <span style='background:
+white'>Australian<i> Journal of Zoology</i>, Vol. 28, p607-613.</span></span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><u><span lang=EN style='color:blue'><a
+href="http://college.cengage.com/mathematics/brase/understandable_statistics/7e/students/datasets/slr/frames/frame.html"><span
+style='color:blue'>Link to All Datasets</span></a></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><b><span lang=EN
+style='font-size:18.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><b><span lang=EN
+style='font-size:18.0pt;line-height:115%'>The Code</span></b></p>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN>The Code was
+written in three phases</span></p>
+
+<ol style='margin-top:0in' start=1 type=1>
+ <li class=MsoNormalCxSpMiddle style='text-align:justify'><span lang=EN>Data
+     preprocessing phase</span></li>
+ <li class=MsoNormalCxSpMiddle style='text-align:justify'><span lang=EN>Training</span></li>
+ <li class=MsoNormalCxSpMiddle style='text-align:justify'><span lang=EN>Prediction
+     and plotting</span></li>
+</ol>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN><br>
+</span><b><span lang=EN style='font-size:18.0pt;line-height:115%'>The data
+preprocessing phase</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN style='font-size:18.0pt;line-height:115%'>Imports</span></b></p>
+
+<p class=MsoNormal><span lang=EN>Numpy import for array processing, python
+doesn’t have built in array support. The feature of working with native arrays
+can be used in python with the help of numpy library.</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>Pandas is a library of python used for working
+with tables, on importing the data, mostly data will be of table format, for
+ease manipulation of tables pandas library is imported</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>Matplotlib is a library of python used to plot
+graphs, for the purpose of visualizing the results we would be plotting the
+results with the help of matplotlib library.</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<table class=a border=0 cellspacing=0 cellpadding=0 style='margin-left:5.0pt;
+ border-collapse:collapse'>
+ <tr>
+  <td width=624 valign=top style='width:6.5in;background:#282A36;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal style='border:none'><span lang=EN style='font-family:Consolas;
+  color:#6272A4;background:#282A36'># Imports</span><span lang=EN
+  style='font-family:Consolas;color:#F8F8F2;background:#282A36'><br>
+  </span><b><span lang=EN style='font-family:Consolas;color:#8BE9FD;background:
+  #282A36'>import</span></b><span lang=EN style='font-family:Consolas;
+  color:#F8F8F2;background:#282A36'> numpy </span><b><span lang=EN
+  style='font-family:Consolas;color:#8BE9FD;background:#282A36'>as</span></b><span
+  lang=EN style='font-family:Consolas;color:#F8F8F2;background:#282A36'> np<br>
+  </span><b><span lang=EN style='font-family:Consolas;color:#8BE9FD;background:
+  #282A36'>import</span></b><span lang=EN style='font-family:Consolas;
+  color:#F8F8F2;background:#282A36'> pandas </span><b><span lang=EN
+  style='font-family:Consolas;color:#8BE9FD;background:#282A36'>as</span></b><span
+  lang=EN style='font-family:Consolas;color:#F8F8F2;background:#282A36'> pd<br>
+  </span><b><span lang=EN style='font-family:Consolas;color:#8BE9FD;background:
+  #282A36'>import</span></b><span lang=EN style='font-family:Consolas;
+  color:#F8F8F2;background:#282A36'> matplotlib.pyplot </span><b><span lang=EN
+  style='font-family:Consolas;color:#8BE9FD;background:#282A36'>as</span></b><span
+  lang=EN style='font-family:Consolas;color:#F8F8F2;background:#282A36'> plt</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN style='font-size:20.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN style='font-size:20.0pt;line-height:115%'>Reading
+the dataset from data</span></b></p>
+
+<p class=MsoNormal><span lang=EN>In this line of code using the read_excel
+method of pandas library, the dataset has been imported from data folder and
+stored in dataset variable.</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<table class=a0 border=0 cellspacing=0 cellpadding=0 style='margin-left:5.0pt;
+ border-collapse:collapse'>
+ <tr>
+  <td width=624 valign=top style='width:6.5in;background:#282A36;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal style='border:none'><span lang=EN style='font-family:Consolas;
+  color:#6272A4;background:#282A36'># Reading the dataset from data</span><span
+  lang=EN style='font-family:Consolas;color:#F8F8F2;background:#282A36'><br>
+  dataset = pd.read_csv(</span><span lang=EN style='font-family:Consolas;
+  color:#F1FA8C;background:#282A36'>r'..\\data\\prices.csv'</span><span
+  lang=EN style='font-family:Consolas;color:#F8F8F2;background:#282A36'>)</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>On viewing the dataset, it contains of two
+columns X and Y where X is dependent variable and Y is Independent Variable.</span></p>
+
+<p class=MsoNormal><img width=165 height=129
+src="Linear%20Regression%20using%20Scikit%20Learn_files/image003.png"
+align=left hspace=12 vspace=12></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>X is an independent variable </span></p>
+
+<p class=MsoNormal><span lang=EN>Y is dependent variable Inference</span></p>
+
+<p class=MsoNormal><span lang=EN>For x-value of 7.6 ,157 y-value </span></p>
+
+<p class=MsoNormal><span lang=EN>for   x-value of 7.1 ,174 y-value</span></p>
+
+<p class=MsoNormal><span lang=EN>And goes on</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN style='font-size:18.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN style='font-size:18.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN style='font-size:18.0pt;line-height:115%'>Creating
+Dependent and Independent variables</span></b></p>
+
+<p class=MsoNormal><span lang=EN>The X Column from the dataset is extracted
+into an X variable of type numpy, similarly the y variable</span></p>
+
+<p class=MsoNormal><span lang=EN>X is an independent variable </span></p>
+
+<p class=MsoNormal><span lang=EN>Y is dependent variable Inference</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<table class=a1 border=0 cellspacing=0 cellpadding=0 style='margin-left:5.0pt;
+ border-collapse:collapse'>
+ <tr>
+  <td width=624 valign=top style='width:6.5in;background:#282A36;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal style='border:none'><span lang=EN style='font-family:Consolas;
+  color:#6272A4;background:#282A36'># Creating Dependent and Independent
+  variables</span><span lang=EN style='font-family:Consolas;color:#F8F8F2;
+  background:#282A36'><br>
+  X = dataset[</span><span lang=EN style='font-family:Consolas;color:#F1FA8C;
+  background:#282A36'>'X'</span><span lang=EN style='font-family:Consolas;
+  color:#F8F8F2;background:#282A36'>].values<br>
+  y = dataset[</span><span lang=EN style='font-family:Consolas;color:#F1FA8C;
+  background:#282A36'>'Y'</span><span lang=EN style='font-family:Consolas;
+  color:#F8F8F2;background:#282A36'>].values</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><img width=256 height=87
+src="Linear%20Regression%20using%20Scikit%20Learn_files/image004.png"
+align=left hspace=12 vspace=12></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>On input 10 it would result in a pandas Series
+object</span></p>
+
+<p class=MsoNormal><span lang=EN>So, values attribute is used to attain an
+numpy array</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN style='font-size:18.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN style='font-size:18.0pt;line-height:115%'>Visualizing
+the data </span></b></p>
+
+<p class=MsoNormal><span lang=EN>The step is to just see how the dataset is </span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<table class=a2 border=0 cellspacing=0 cellpadding=0 style='margin-left:5.0pt;
+ border-collapse:collapse'>
+ <tr>
+  <td width=624 valign=top style='width:6.5in;background:#282A36;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal style='border:none'><span lang=EN style='font-family:Consolas;
+  color:#6272A4;background:#282A36'># Visualizing the data </span><span
+  lang=EN style='font-family:Consolas;color:#F8F8F2;background:#282A36'><br>
+  title=</span><span lang=EN style='font-family:Consolas;color:#F1FA8C;
+  background:#282A36'>'Linear Regression on &lt;Dataset&gt;'</span><span
+  lang=EN style='font-family:Consolas;color:#F8F8F2;background:#282A36'><br>
+  x_axis_label = </span><span lang=EN style='font-family:Consolas;color:#F1FA8C;
+  background:#282A36'>'X-value &lt; The corresponding attribute of X in dataset
+  &gt;'</span><span lang=EN style='font-family:Consolas;color:#F8F8F2;
+  background:#282A36'><br>
+  y_axis_label = </span><span lang=EN style='font-family:Consolas;color:#F1FA8C;
+  background:#282A36'>'y-value &lt; The corresponding attribute of X in dataset
+  &gt;'</span><span lang=EN style='font-family:Consolas;color:#F8F8F2;
+  background:#282A36'><br>
+  plt.scatter(X,y)<br>
+  plt.title(title)<br>
+  plt.xlabel(x_axis_label)<br>
+  plt.ylabel(y_axis_label)<br>
+  plt.show()</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>On visualization the data would appear
+something like this</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><img width=515 height=371
+src="Linear%20Regression%20using%20Scikit%20Learn_files/image005.jpg"
+align=left hspace=12></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>  </span></p>
+
+<p class=MsoNormal><span lang=EN>Each point on the plot is a data point showing
+the respective list price on x-axis and Best Price on y-axis</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>The X and Y attributes would vary based on
+dataset.</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN style='font-size:18.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN style='font-size:18.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN style='font-size:18.0pt;line-height:115%'>Splitting
+the data into training set and test set</span></b></p>
+
+<p class=MsoNormal><span lang=EN>We are splitting the whole dataset into
+training and test set where training set is used for fitting the line to data
+and test set is used to check how good the line if for the data.</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<table class=a3 border=0 cellspacing=0 cellpadding=0 style='margin-left:5.0pt;
+ border-collapse:collapse'>
+ <tr>
+  <td width=624 valign=top style='width:6.5in;background:#282A36;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal style='border:none'><span lang=EN style='font-family:Consolas;
+  color:#6272A4;background:#282A36'># Splitting the data into training set and
+  test set</span><span lang=EN style='font-family:Consolas;color:#F8F8F2;
+  background:#282A36'><br>
+  </span><b><span lang=EN style='font-family:Consolas;color:#8BE9FD;background:
+  #282A36'>from</span></b><span lang=EN style='font-family:Consolas;color:#F8F8F2;
+  background:#282A36'> sklearn.model_selection </span><b><span lang=EN
+  style='font-family:Consolas;color:#8BE9FD;background:#282A36'>import</span></b><span
+  lang=EN style='font-family:Consolas;color:#F8F8F2;background:#282A36'>
+  train_test_split<br>
+  X_test,X_train,y_test,y_train = train_test_split(X,y, test_size = 0.8)</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN style='font-size:18.0pt;line-height:115%'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN style='font-size:18.0pt;line-height:115%'>Reshaping
+the numpy arrays since the scikit learn model expects 2-D array in further code</span></b></p>
+
+<p class=MsoNormal><span lang=EN>In further the scikit learn model would be
+expecting a 2-D array of shape (length,1).</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<table class=a4 border=0 cellspacing=0 cellpadding=0 style='margin-left:5.0pt;
+ border-collapse:collapse'>
+ <tr>
+  <td width=624 valign=top style='width:6.5in;background:#282A36;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal style='border:none'><span lang=EN style='font-family:Consolas;
+  color:#6272A4;background:#282A36'># Reshaping the numpy arrays since the
+  scikit learn model expects 2-D array in further code</span><span lang=EN
+  style='font-family:Consolas;color:#F8F8F2;background:#282A36'><br>
+  X_train = np.reshape(X_train,newshape = (-1,1))<br>
+  y_train = np.reshape(y_train,newshape = (-1,1))<br>
+  X_test = np.reshape(X_test,newshape = (-1,1))<br>
+  y_test = np.reshape(y_test,newshape = (-1,1))</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><img width=353 height=224
+src="Linear%20Regression%20using%20Scikit%20Learn_files/image006.png"
+align=left hspace=12 vspace=12></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>The code was just to convert a single
+dimensional array into a 2-D array where each element is an array</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal style='text-align:justify'><b><span lang=EN
+style='font-size:18.0pt;line-height:115%'>The Training phase</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN style='font-size:18.0pt;line-height:115%'>Importing
+the linear model from sklearn framework</span></b></p>
+
+<p class=MsoNormal><span lang=EN>From scikit learn Library LinearRegression is
+imported. Lr is an object of LinearRegression.</span></p>
+
+<p class=MsoNormal><span lang=EN>The process of training is done in the fit
+method, our dependent and independent variable are fed into to the fit method
+in which it would try to fit a line to the data provided.</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<table class=a5 border=0 cellspacing=0 cellpadding=0 style='margin-left:5.0pt;
+ border-collapse:collapse'>
+ <tr>
+  <td width=624 valign=top style='width:6.5in;background:#282A36;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal style='border:none'><span lang=EN style='font-family:Consolas;
+  color:#6272A4;background:#282A36'># Importing the linear model from sklearn
+  framework</span><span lang=EN style='font-family:Consolas;color:#F8F8F2;
+  background:#282A36'><br>
+  </span><b><span lang=EN style='font-family:Consolas;color:#8BE9FD;background:
+  #282A36'>from</span></b><span lang=EN style='font-family:Consolas;color:#F8F8F2;
+  background:#282A36'> sklearn.linear_model </span><b><span lang=EN
+  style='font-family:Consolas;color:#8BE9FD;background:#282A36'>import</span></b><span
+  lang=EN style='font-family:Consolas;color:#F8F8F2;background:#282A36'>
+  LinearRegression<br>
+  lr = LinearRegression()<br>
+  lr.fit(X = X_train, y = y_train)</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN style='font-size:18.0pt;line-height:115%'>The
+Prediction phase</span></b></p>
+
+<p class=MsoNormal><b><span lang=EN style='font-size:18.0pt;line-height:115%'>Predicting
+the Results</span></b></p>
+
+<p class=MsoNormal><span lang=EN>By the trained linear regression model we are
+trying to predict the values of test data. Y_pred variable contains all the
+predicted y-values of the test x-values.</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<table class=a6 border=0 cellspacing=0 cellpadding=0 style='margin-left:5.0pt;
+ border-collapse:collapse'>
+ <tr>
+  <td width=624 valign=top style='width:6.5in;background:#282A36;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal style='border:none'><span lang=EN style='font-family:Consolas;
+  color:#6272A4;background:#282A36'># Predicting the Results</span><span
+  lang=EN style='font-family:Consolas;color:#F8F8F2;background:#282A36'><br>
+  y_pred = lr.predict(X_test)</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal style='text-align:justify'><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span lang=EN style='font-size:18.0pt;line-height:115%'>Visualizing
+the Results</span></b></p>
+
+<p class=MsoNormal><span lang=EN>As we have predicted the y-values for a set of
+x-values we are visualizing the results to check how good did our line fit for
+our predictions.</span></p>
+
+<p class=MsoNormal><span lang=EN>The plot shows the red points are the data points
+are actual values where the blue line is the predictions.</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<table class=a7 border=0 cellspacing=0 cellpadding=0 style='margin-left:5.0pt;
+ border-collapse:collapse'>
+ <tr>
+  <td width=624 valign=top style='width:6.5in;background:#282A36;padding:5.0pt 5.0pt 5.0pt 5.0pt'>
+  <p class=MsoNormal style='border:none'><span lang=EN style='font-family:Consolas;
+  color:#6272A4;background:#282A36'># Visualizing the Results</span><span
+  lang=EN style='font-family:Consolas;color:#F8F8F2;background:#282A36'><br>
+  plt.scatter(X_test,y_test,c=</span><span lang=EN style='font-family:Consolas;
+  color:#F1FA8C;background:#282A36'>'red'</span><span lang=EN style='font-family:
+  Consolas;color:#F8F8F2;background:#282A36'>)<br>
+  plt.plot(X_test,y_pred)<br>
+  plt.title(title)<br>
+  plt.xlabel(x_axis_label)<br>
+  plt.ylabel(y_axis_label)<br>
+  plt.show()</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=544 height=371 id=image14.png
+src="Linear%20Regression%20using%20Scikit%20Learn_files/image007.jpg"></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>Similarly,</span></p>
+
+<p class=MsoNormal><span lang=EN>Graph results for all the datasets</span></p>
+
+<p class=MsoNormal><img width=315 height=208
+src="Linear%20Regression%20using%20Scikit%20Learn_files/image008.jpg"
+align=left hspace=12><img border=0 width=317 height=225 id=image17.png
+src="Linear%20Regression%20using%20Scikit%20Learn_files/image009.jpg"></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=321 height=228 id=image16.png
+src="Linear%20Regression%20using%20Scikit%20Learn_files/image010.jpg"><img
+width=313 height=220
+src="Linear%20Regression%20using%20Scikit%20Learn_files/image011.jpg"
+align=left hspace=12></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN>There are certain outliers in Fire Theft
+graphs. Since, there is random parameter exits the results might not be the
+same for every execution of code.</span></p>
+
+<p class=MsoNormal><u><span lang=EN style='color:blue'><span style='text-decoration:
+ none'>&nbsp;</span></span></u></p>
+
+</div>
+
+</body>
+
+</html>
