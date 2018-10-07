@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Linear Regression for Newbies
+data : 2018-09-04
 ---
 
 # Linear Regression using Scikit Learn
