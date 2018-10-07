@@ -2,50 +2,27 @@
 
 
 
+First Image Local reference from image folder
+
+
+
+![First Image ](.\linear-regression-using-scikit-learn-images\image2.png)
+
+Second Image from html Image tag reference
+
+
+
 <img src="linear-regression-using-scikit-learn-images/image2.png" alt="Smiley face" height="42" width="42">
 
+Third Image markdown from the same folder
 
-
-adhgfdjcgcgfc
-![Image not found what](https://github.com/phanimadhusudhanthontepu/linear_regression/blob/master/docs/linear-regression-using-scikit-learn-images/image2.png)
-
-
+![Thrid Image from same folder](image2.png)
 
 
 
+Fourth Image from Internet  using git link
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![Fourth Image](https://github.com/phanimadhusudhanthontepu/linear_regression/blob/master/docs/linear-regression-using-scikit-learn-images/image2.png)
 
 
 
