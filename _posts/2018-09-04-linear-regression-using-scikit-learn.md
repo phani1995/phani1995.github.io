@@ -1,3 +1,8 @@
+---
+layout: post
+title: Linear Regression for Newbies
+---
+
 # Linear Regression using Scikit Learn
 
 ## The Theory
