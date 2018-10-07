@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: main
 title: Linear Regression for Newbies
 data : 2018-09-04
 ---
