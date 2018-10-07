@@ -28,12 +28,6 @@ Fourth Image from Internet  using git link
 
 
 
+Fifth Image from assets folder
 
-
-
-
-
-
-
-
-
+![Fifth Image not found](D:\Repositories\phanimadhusudhanthontepu.github.io\assets\images\linear-regression-using-scikit-learn-images\image2.png)
