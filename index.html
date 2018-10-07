@@ -3,10 +3,6 @@ layout: default
 title: Phani Madhusudhan Thontepu Site
 date: 2018-10-04
 ---
-<div class="about_myself">
-	<!--h1>Hi there, I'm Madhusudhan!</h1-->
-	<!--p>I'm as a AI resercher <em>Into deep learning </em> </p-->
-</div><!-- /.blurb -->
 <ul class="posts">
 	{% for post in site.posts %}
 	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
