@@ -1,91 +1,61 @@
 # Linear Regression using Tensorflow Estimator
 
-![Image to be included]()
+![Image not found](/assets/images/linear-regression-using-tensorflow-estimator-images/image1.png)
 
-# The Theory
-
+## The Theory
 Linear Regression is the process of fitting a line to the dataset.
-
-# Single Variable Linear Regression
-
-# The Mathematics
-
+## Single Variable Linear Regression
+## The Mathematics
 The equation of Line is
-$$
-y = m*x +c
-$$
-Where,
-
- y = dependent variable
-
- X = independent variable
-
+y= m*x+c
+Where,\
+y = dependent variable\
+X = independent variable\
 C = intercept 
 
 The algorithm is trying to fit a line to the data by adjusting the values of m and c. Its Objective is to attain to a value of m such that for any given value of x it would be properly predicting the value of y.
 
-There are various ways in which we can attain the values of m and c 
+There are various ways in which we can attain the values of m and c
+* Statistical approach
+* Iterative approach
 
-1. Statistical approach
-2. Iterative approach
-
-Here we are using a scikit learn framework which internally uses iterative approach to attain the linear regression .
-
-# The Dataset 
+Here we are using a scikit learn framework which internally uses iterative approach to attain the linear regression.
+## The Dataset 
 
 Dataset consists of two columns namely X and y
+Where\
 
-Where
-
-For List Price Vs. Best Price for a New GMC Pickup dataset
-
-X = List price (in $1000) for a GMC pickup truck
-
-Y = Best price (in $1000) for a GMC pickup truck
-
+For List Price Vs. Best Price for a New GMC Pickup dataset\
+X = List price (in $1000) for a GMC pickup truck\
+Y = Best price (in $1000) for a GMC pickup truck\
 The data is taken from Consumer’s Digest.
 
-For Fire and Theft in Chicago 
-
-X = fires per 100 housing units
-
-Y = thefts per 1000 population within the same Zip code in the Chicago metro area
-
+For Fire and Theft in Chicago \
+X = fires per 100 housing units\
+Y = thefts per 1000 population within the same Zip code in the Chicago metro area\
 The data is taken from U.S Commission of Civil Rights.
 
-For Auto Insurance in Sweden dataset
-
-X = number of claims
-
-Y = total payment for all the claims in thousands of Swedish Kronor
-
+For Auto Insurance in Sweden dataset\
+X = number of claims\
+Y = total payment for all the claims in thousands of Swedish Kronor\
 The data is taken from Swedish Committee on Analysis of Risk Premium in Motor Insurance.
 
-For Gray Kangaroos dataset
-
-X = nasal length (mm ¥10)
-
-Y = nasal width (mm ¥ 10)
-for a male gray kangaroo from a random sample of such animals
-
+For Gray Kangaroos dataset\
+X = nasal length (mm ¥10)\
+Y = nasal width (mm ¥ 10)\
+for a male gray kangaroo from a random sample of such animals\
 The data is taken from Australian Journal of Zoology, Vol. 28, p607-613.
 
 [Link to All Datasets](http://college.cengage.com/mathematics/brase/understandable_statistics/7e/students/datasets/slr/frames/frame.html)
 
-# The Code
-
+## The Code
 The Code was written in three phases
+1.	Data preprocessing phase
+2.	Training
+3.	Prediction and plotting
 
-1. Data preprocessing phase
-2. Training
-3. Prediction and plotting
-
-
-
-# Data Preprocessing Phase
-
-# Imports
-
+## Data Preprocessing Phase
+## Imports
 Numpy import for array processing, python doesn’t have built in array support. The feature of working with native arrays can be used in python with the help of numpy library.
 
 Pandas is a library of python used for working with tables, on importing the data, mostly data will be of table format, for ease manipulation of tables pandas library is imported
@@ -101,30 +71,22 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import tensorflow as tf
 ```
-
-# Reading the dataset from data
-
+## Reading the dataset from data
 In this line of code using the read_excel method of pandas library, the dataset has been imported from data folder and stored in dataset variable.
 
-On visualizing the dataset, it contains of two columns X and Y where X is dependent variable and Y is Independent Variable.
+On visualizing the dataset, it contains of two columns X and Y 
+where X is dependent variable and Y is Independent Variable.
 
-Note : On using Grey Kangaroos dataset,the data is normalised, standardised,having a lot of inbuilt variance and outliers the code would result in a gradient exploding problem.
-
-```python
-# Reading the dataset from data
-dataset = pd.read_csv(r'..\\data\\prices.csv')
-```
+>Note : On using Grey Kangaroos dataset,the data is normalised, standardised,having a lot of inbuilt variance and outliers the code would result in a gradient exploding problem.
 
 On viewing the dataset, it contains of two columns X and Y where X is dependent variable and Y is Independent Variable.
 
-![Image to be Included]()
+![Image not found](/assets/images/linear-regression-using-tensorflow-estimator-images/image2.png)
 
 ## Creating Dependent and Independent variables
 
-The X Column from the dataset is extracted into an X variable of type numpy, similarly the y variable
-
-X is an independent variable 
-
+The X Column from the dataset is extracted into an X variable of type numpy, similarly the y variable\
+X is an independent variable \
 Y is dependent variable Inference
 
 ```python
@@ -132,19 +94,13 @@ Y is dependent variable Inference
 X = dataset['X'].values
 y = dataset['Y'].values
 ```
-
-![Image to be included]()
-
+![Image not found](/assets/images/linear-regression-using-tensorflow-estimator-images/image3.png)\
 On input 10 it would result in a pandas Series object
-
 So, values attribute is used to attain an numpy array
 
-## Visualizing the data
-
+## Visualizing the data 
 The step is to just see how the dataset is 
-
 On visualization the data would appear something like this
-
 The X and Y attributes would vary based on dataset.
 
 ```python
@@ -159,22 +115,18 @@ plt.ylabel(y_axis_label)
 plt.show()
 ```
 
-![]()
+![Image not found](/assets/images/linear-regression-using-tensorflow-estimator-images/image4.png)\
 
 ## Splitting the data into training set and test set
-
 We are splitting the whole dataset into training and test set where training set is used for fitting the line to data and test set is used to check how good the line if for the data.
 
 ```python
 # Splitting the data into training set and test set
-X_train,X_test = np.split(X,indices_or_sections = [int(len(X)*0.2)])
-y_train,y_test = np.split(y,indices_or_sections = [int(len(X)*0.2)])
+X_train,X_test = np.split(X,indices_or_sections = [int(len(X)*0.8)])
+y_train,y_test = np.split(y,indices_or_sections = [int(len(X)*0.8)])
 ```
-
 ## Training Phase
-
 Variables for training 
-
 * Epochs: stands for how many time the whole data is put through on forward propagation and one backward propagation.
 * Learning Rate: is a hyperparameter in backpropagation algorithm to adjust the variables in graph based on loss obtained in forward propagation
 
@@ -183,7 +135,6 @@ Variables for training
 epochs = 100
 learning_rate = 0.001
 ```
-
 ## Feature Columns
 
 These are the features or Independent variables used for training. We are transforming the numpy arrays into tensorflow understandable feature columns specifying the column name as key. This feature column would be fed into tensorflow estimators.
@@ -192,19 +143,20 @@ These are the features or Independent variables used for training. We are transf
 # Feature Columns
 feature_columns = [tf.feature_column.numeric_column(key="X")]
 ```
-
 ## Creating feature dictionaries
+These dictionaries are used in creating in the input function to model.train  and model.predict
+* features_train: used in input function of model.train
+* features_test: used in input function of model.predict
 
-These dictionaries are used in creating in the input function to `model.train`  and `model.predict`
+```python
+# Creating feature dictionaries
+features_train = {'X':X_train}
+features_test  = {'X':X_test}
+```
 
-* features_train: used in input function of `model.train`
+# Creating an Input function which would return a batch dataset on every call
 
-- features_test: used in input function of `model.predict`
-
-## Creating an Input function which would return a batch dataset on every call
-
-The input functions are written for the tensorflow estimator function. The estimator would be expecting a batch dataset of which would return a tuple of features and labels.
-
+The input functions are written for the tensorflow estimator function. The estimator would be expecting a batch dataset of which would return a tuple of features and labels.\
 The type of processing expected is 
 
 ```python
@@ -217,7 +169,6 @@ def train_input_fn(features, labels, batch_size):
 ```
 
 It would return a batch tf.data.Dataset Object
-
 Another acceptable format of input function is 
 
 ```python
@@ -231,15 +182,10 @@ def input_evaluation_set():
 ```
 
 It would return a tuple of two elements, first element features dict and second element labels
-
 Other functions which would support input format are numpy_input_fn and pandas_input_fn
-
 For more docs and reference
-
 * [Tensorflow Premade Estimator Input Functions](https://www.tensorflow.org/guide/premade_estimators)
-
 * [Estimator Inputs Module](https://www.tensorflow.org/api_docs/python/tf/estimator/inputs)
-
 
 ```python
 # Creating an Input function which would return a batch dataset on every call
@@ -248,8 +194,7 @@ def input_function(features, labels, batch_size):
     return (data.shuffle(10).batch(5).repeat().make_one_shot_iterator().get_next()) 
 ```
 
-# Making the lambda function of train dataset
-
+## Making the lambda function of train dataset
 Estimator would be expecting lambda function without any arguments
 
 ```python
@@ -257,8 +202,7 @@ Estimator would be expecting lambda function without any arguments
 input_train = lambda: input_function(features_train, y_train,5)
 ```
 
-# Build the Estimator
-
+## Build the Estimator
 Tensorflow premade estimator are high level api. These estimators provide a very high level implementation of machine learning models. Here in the code we are using the LinearRegressor class
 
 ```python
@@ -267,7 +211,6 @@ model = tf.estimator.LinearRegressor(feature_columns=feature_columns)
 ```
 
 ## Train the model
-
 Training is the process of tuning the models parameters with the provided input data. model.train would take care of calling the input_train which would feed the model with input data of shuffled batches. The model would be trained for the given number of epochs.
 
 ```python
@@ -275,19 +218,15 @@ Training is the process of tuning the models parameters with the provided input 
 model.train(input_fn = input_train, steps = epochs)
 ```
 
-# Creating an input function for prediction
-
+## Creating an input function for prediction
 Similar to train input function predict input function is also create using pre-built `tf.estimator.input` module.
 
 ```python
 # Creating a input function for prediction
 predict_input_fn = tf.estimator.inputs.numpy_input_fn(features_test, shuffle=False)
 ```
-
 ## Extracting the y-predicted values into a numpy array
-
 Converting the values in the generator to numpy array for the ease of plotting.
-
 creating a list -> iterating over the generator and appending values -> converting the list to numpy array
 
 ```python
@@ -299,9 +238,7 @@ y_predicted = np.array(y_predicted)
 ```
 
 ## Visualizing the Results
-
-As we have predicted the y-values for a set of x-values we are visualizing the results to check how good did our line fit for our predictions.
-
+As we have predicted the y-values for a set of x-values we are visualizing the results to check how good did our line fit for our predictions.\
 The plot shows the red points are the data points are actual values where the blue line is the predictions
 
 ```python
@@ -313,4 +250,4 @@ plt.xlabel(x_axis_label)
 plt.ylabel(y_axis_label)
 plt.show()
 ```
-
+![Image not found](/assets/images/linear-regression-using-tensorflow-estimator-images/image5.png)
