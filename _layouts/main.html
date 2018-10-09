@@ -2,9 +2,14 @@
 layout : default
 ---
 <link rel="stylesheet" href="/assets/css/main.css">
-<aside class ='sidebar'>
+<link rel="stylesheet" href="/assets/css/bootstrap/css/bootstrap.min.css">
+
 <p>This is aside bar</p>
-<header>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <aside class ='sidebar'>
+	  <header>
   <div class="sidebar-header">
     This is header
   </div>
@@ -16,6 +21,15 @@ layout : default
   </div>
 </footer>
 </aside>
-<div>
-{{content}}
+    </div>
+    <div class="col-sm">
+      One of three columns
+    </div>
+    <div class="col-sm">  
+		<div>
+			{{content}}
+		</div>
+    </div>
+  </div>
 </div>
+
