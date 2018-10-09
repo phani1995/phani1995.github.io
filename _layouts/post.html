@@ -1,8 +1,31 @@
 ---
-layout: main
+layout: default
 ---
-<article>
-<div class="post">
-  {{ content }}
+<link rel="stylesheet" href="/assets/css/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link href="/assets/css/syntax.css" rel="stylesheet" >
+
+<p>This is aside bar</p>
+<div class="container">
+  <div class="row">
+    <div class="col-2">
+    <aside class ='sidebar'>
+		<header>
+			<div class="sidebar-header">
+				This is header
+			</div>
+		</header>
+		<footer>
+			<div class="sidebar-footer" >
+				This is footer
+			</div>
+		</footer>
+	</aside>
+    </div>
+    <div class="col-10">  
+		<div>
+			{{content}}
+		</div>
+    </div>
+  </div>
 </div>
-</article>

@@ -1,3 +1,7 @@
+---
+layout : post
+---
+
 # Linear Regression Comparison between framework and scratch
 
 ![Image to be included](/assets/images/linear_regression_comparison_framework_vs_scratch_files/image1.png)

@@ -1,3 +1,7 @@
+---
+layout : post
+---
+
 # Linear Regression from Scratch Statistical Approach
 
 ## The Theory

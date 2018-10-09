@@ -1,3 +1,7 @@
+---
+layout : post
+---
+
 # Linear Regression using Tensorflow Estimator
 
 ![Image not found](/assets/images/linear-regression-using-tensorflow-estimator-images/image1.png)
