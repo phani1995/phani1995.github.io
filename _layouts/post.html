@@ -5,27 +5,38 @@ layout: default
 <link rel="stylesheet" href="/assets/css/main.css">
 <link href="/assets/css/syntax.css" rel="stylesheet" >
 
-<p>This is aside bar</p>
-<div class="container">
-  <div class="row">
-    <div class="col-2">
-    <aside class ='sidebar'>
-		<header>
-			<div class="sidebar-header">
-				This is header
-			</div>
-		</header>
-		<footer>
-			<div class="sidebar-footer" >
-				This is footer
-			</div>
-		</footer>
-	</aside>
-    </div>
-    <div class="col-10">  
-		<div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-3" >
+			<aside class ="sidebar">
+				<header >
+					<div class="sidebar-header">
+						<div>
+							<p align="center">
+								<img alt="Image not found" src ="/assets/site_images/pp.jpg"  height="100" width="100" >
+							</p>
+						</div>
+						<br>
+						<p class="text-justify text-center">I am machine Learning Enginner intrested in Artificial Intelligence and Data Science and Eager to learn anything</p>
+						
+					</div>
+				</header>
+				<footer>
+					<div class="sidebar-footer" >
+						<ul>
+							<li>Coffee</li>
+							<li>Tea</li>
+							<li>Milk</li>
+						</ul>
+					</div>
+				</footer>
+			</aside>
+		</div>
+		<div class="col-8">  
 			{{content}}
 		</div>
-    </div>
-  </div>
+		<div class="col-1">  
+			<!--Empty Column-->
+		</div>
+	</div>
 </div>
