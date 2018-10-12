@@ -1,12 +1,6 @@
----
-layout: post
-title: "Transfer Learning for Newbies"
-date: 2018-09-28
----
-
 # Linear Regression using Scikit Learn
 
-![Image to be included](/assets/images/linear-regression-using-scikit-learn-images/image1.png)
+![Image to be included](/assets/images/linear-regression-using-scikit-learn-images/title_image.png)
 
 ## The Theory
 
