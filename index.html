@@ -14,9 +14,8 @@ date: 2018-10-04
 				<h5 class="card-title" title="{{ post.title }}">
 						<a href="{{ post.url }}">{{ post.title }}</a>
 				</h5>
-				</h5>
+				<p>{{post.date | date: '%Y, %b %d'}}</p>
 				<div class="card-body">
-					
 					<p class="card-text">{{post.description | truncatewords: 15}}</p>
 				</div>
 			</div>
