@@ -4,6 +4,7 @@ title:  "Linear Regression using tensorflow estimator"
 date: 2018-09-30 20:47:28 +0530
 categories: Linear Regression 
 description : Linear Regression is the process of fitting a line to the dataset. 
+image : /assets/images/linear-regression-using-tensorflow-estimator-images/title_image.png
 ---
 
 

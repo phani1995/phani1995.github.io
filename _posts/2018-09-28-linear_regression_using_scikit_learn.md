@@ -4,6 +4,7 @@ title:  "Linear Regression using scikit learn"
 date: 2018-09-28 20:47:28 +0530
 categories: Linear Regression 
 description : Linear Regression is the process of fitting a line to the dataset. 
+image : /assets/images/linear-regression-using-scikit-learn-images/title_image.png
 ---
 
 

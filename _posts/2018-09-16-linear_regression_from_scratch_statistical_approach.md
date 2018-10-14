@@ -4,6 +4,7 @@ title:  "Linear Regression from Scratch Statistical Approach"
 date: 2018-09-16 20:47:28 +0530
 categories: Linear Regression 
 description : Linear Regression is the process of fitting a line to the dataset. 
+image : /assets/images/linear-regression-from-scratch-statistical-approach-images/title_image.png
 ---
 
 # Linear Regression from Scratch Statistical Approach

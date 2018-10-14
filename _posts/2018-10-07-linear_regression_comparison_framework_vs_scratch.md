@@ -4,6 +4,7 @@ title:  "Linear Regression comparison framework vs scratch"
 date: 2018-10-07 20:47:28 +0530
 categories: Linear Regression 
 description : Linear Regression is the process of fitting a line to the dataset. 
+image : /assets/images/linear_regression_comparison_framework_vs_scratch_files/title_image.png
 ---
 
 # Linear Regression Comparison between framework and scratch
