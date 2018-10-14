@@ -6,17 +6,40 @@
 .post{
 	color: #ffffff;
 	padding: 20px 10px;
+	transition: all .3s ease-in-out;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	background: #212529;
 }
+
+.post:hover {
+    transform: scale(1.05); 
+}
+
 .sidebar{
-	
 	background-color: #343a40 !important;
+	margin : 0px;
+	height: 100vh;
+	z-index: 1;
 }
 
 .card{
 	padding: 20px;
 	margin: 20px;
-	
 }
+
+.content-column{
+	padding-top :50px;
+}
+
+.aside-bar{
+	padding :10px;
+}
+
+
+
 pre {
     display: block;
     padding: 9.5px;
