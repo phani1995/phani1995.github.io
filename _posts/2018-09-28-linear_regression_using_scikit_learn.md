@@ -1,10 +1,4 @@
----
-layout: post
-title:  "Linear Regression using scikit learn"
-date: 2018-10-28 20:47:28 +0530
-categories: Linear Regression 
-description : Linear Regression is the process of fitting a line to the dataset. In this post we build Liner Regressor using scikit learn libray on four different dataset. 
----
+
 
 # Linear Regression using Scikit Learn
 
