@@ -1,10 +1,10 @@
 <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
   <a class="navbar-brand" href="#">
-	<img src="/assets/site_images/pp.jpg" width="60" height="60" alt="">
+	<img class="rounded" src="/assets/site_images/Phani Madhusudhan Official Image.jpg" width="60" height="60" alt="Profile Picture not found">
   </a>
   <ul class="navbar-nav mr-auto">
 	<li class="nav-item navbar-brand ">
-			<a class="nav-link" href="#">Madhusudhan's Blog<span class="sr-only">(current)</span></a>
+			<a class="nav-link" href="#">{{site.title}}<span class="sr-only">(current)</span></a>
 	</li>
   </ul>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,17 +21,21 @@
         <a class="nav-link active" href="#">Home</a>
      </li>
 	 <li class="nav-item">
-        <a class="nav-link" href="#">Projects</a>
+        <a class="nav-link" href="{{site.github_projects_link}}">Projects</a>
      </li>
 	 <li class="nav-item">
-        <a class="nav-link" href="#">Resume</a>
+        <a class="nav-link" href="/assets/files/Phani Madhusudhan's Resume.pdf">Resume</a>
      </li>
 	 <li class="nav-item">
         <a class="nav-link" href="#">Contact</a>
      </li>
 	 <li class="nav-item">
-        <a class="nav-link" href="#">Git</a>
+        <a class="nav-link" href="#">About</a>
      </li>
+	 <li class="nav-item">
+      <a class="nav-link" href="{{site.github_link}}" target="_blank">Github</a>
+     </li>
+	 
 	</ul>
     <!--form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
