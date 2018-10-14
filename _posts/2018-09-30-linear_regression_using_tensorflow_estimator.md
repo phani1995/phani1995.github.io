@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Linear Regression from Scratch Statistical Approach"
-date: 2018-09-16 
+date: 2018-09-30 04:30:00 +0530
 categories: Linear Regression 
 description : Linear Regression is the process of fitting a line to the dataset.In this post we build Liner Regressor using scikit learn libray on four different dataset. 
 ---
