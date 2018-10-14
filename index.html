@@ -11,13 +11,17 @@ date: 2018-10-04
 <ul class="posts">
 	<div class="container">
 		{% for post in site.posts %}
-		<article class="post">
-			<h2 title="{{ post.title }}"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-			<p> {{post.content | truncatewords: 15}}</p>
-			<p>{{ post.date | date_to_string }}</p>  
-		</article>
+		<div class ="row">
+			<div class="card post" style="width: 150rem;">
+				
+				<h5 class="card-title" title="{{ post.title }}">
+						<a href="{{ post.url }}"> {{ post.title }}</a>
+				</h5>
+				<p>{{post.date | date: '%Y, %b %d'}}</p>
+				
+			</div>
+		</div>		
 		{% endfor %}
 	</div>
-		
 </ul>
 
