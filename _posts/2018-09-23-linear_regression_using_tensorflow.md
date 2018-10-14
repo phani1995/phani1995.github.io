@@ -1,3 +1,10 @@
+---
+layout: post
+title:  "Linear Regression using tensorflow"
+date: 2018-09-23 20:47:28 +0530
+categories: Linear Regression 
+description : Linear Regression is the process of fitting a line to the dataset. 
+---
 
 
 # Linear Regression using Tensorflow
