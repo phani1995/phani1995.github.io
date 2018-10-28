@@ -1,6 +1,8 @@
 
 .sidebar-header {
- background-color: lightblue;
+	background-color: lightblue;
+	border-radius: 25px;
+	padding : 10px
 }
 
 .post{
@@ -27,6 +29,7 @@
 
 .sidebar-image{
 	border-radius: 50%;
+	padding : 5px
 }
 
 .card{
