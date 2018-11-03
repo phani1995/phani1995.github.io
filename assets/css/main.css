@@ -1,8 +1,17 @@
 
+
+
+.contact-icon{
+	width: 20 ;
+	height: 20
+}
 .sidebar-header {
 	background-color: lightblue;
 	border-radius: 25px;
 	padding : 10px
+}
+.page-content{
+	padding: 50px
 }
 
 .post{
