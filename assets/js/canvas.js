@@ -3,6 +3,7 @@ document.write("<h1>Hello World!</h1><p>Have a nice day!</p>");
 
 document.write("Hello")
 console.log("js is loading")
+//var canvas = document.querySelector('canvas');
 var canvas = document.getElementById('myCanvas');
 document.write(canvas)
 //canvas.width  = window.innerWidth;
