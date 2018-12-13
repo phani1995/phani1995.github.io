@@ -1,10 +1,7 @@
 
-document.write("<h1>Hello World!</h1><p>Have a nice day!</p>");
+//Currently not using this file
+var canvas = document.querySelector('canvas');
 
-document.write("Hello")
-console.log("js is loading")
-//var canvas = document.querySelector('canvas');
-var canvas = document.getElementById('myCanvas');
 document.write(canvas)
 //canvas.width  = window.innerWidth;
 //canvas.height = window.innerHeight;
