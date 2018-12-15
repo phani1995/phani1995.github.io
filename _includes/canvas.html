@@ -144,12 +144,9 @@
         function(){
             if (circleInFocus!=null)
             {
-                alert(mouse.y)
-                alert(circleInFocus.name)
                 algoArray.forEach(element => {
                         if(element.name == circleInFocus.name)
                         {
-                            alert(element.url)
                             window.location.href = element.url;
                         }
                     });
