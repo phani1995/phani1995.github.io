@@ -1,6 +1,37 @@
----
-layout : default
----
-{% include navigation_bar.html %}
-{{content}}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		
+		<!--character encoding for HTML document -->
+		<meta charset="UTF-8">
+
+		<!--For make IE use latest rendering engine -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<!-- Set the page to the width of the device and set the zoon level -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!--Including bootstrap js file-->
+		<script src="/assets/css/bootstrap/js/bootstrap.js"></script>
+		
+		<!--Including bootstrap css file-->
+		<link rel="stylesheet" href="/assets/css/bootstrap/css/bootstrap.css">
+	
+		<!--Including custom styles-->
+		<link rel="stylesheet" href="/assets/css/main.css">
+
+		<!--Link to Icon -->
+		<link rel="shortcut icon" href="/assets/site_images/icons/artificial-intelligence-64.png" href="{{page.image}}" type="image/png">
+		
+		<!--Tile of Page-->
+		<title>{{page.title}}</title>
+
+	</head>
+	<body>
+        {% include navigation_bar.html %}
+        {{content}}
+	</body>
+</html>
+
+
 

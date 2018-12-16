@@ -1,48 +1,49 @@
 <!--Aside Bar-->
-<div class ="aside-bar">
-        <header >
-            <div class="sidebar-header">
-                <div>
-                    <p class="sidebar-image" align="center">
-                        <a href="{{site.hompage}}">
-                            <img class="sidebar-image" alt="Image not found" src ="/assets/site_images/Phani_Madhusudhan_Official_Image.JPG"  height="100" width="100" class="rounded img-fluid">
-                        </a>
-                    </p>
-                </div>
+<div class ="container-fluid aside-bar">
+
+    <!--Header-->
+    <div class='row sidebar-header'>  
+        <header>
+                <p class="sidebar-image">
+                    <a href="{{site.hompage}}">
+                        <img class="sidebar-image" alt="Image not found" src ="/assets/site_images/Phani_Madhusudhan_Official_Image.JPG"  height="100" width="100" class="rounded img-fluid">
+                    </a>
+                </p>
                 <br>
                 <p class="text-justify text-center">I am machine Learning Enginner intrested in Artificial Intelligence and Data Science</p>
-                
-            </div>
         </header>
-        <footer>
-            <div class="sidebar-footer" >
+    </div>
+    
+    <div class='row sidebar-footer'>
+        <!--Footer-->
+        <footer>      
+            <ul style="list-style: none;">
+                <li>
+                    <a href="{{site.github_link}}">
+                        <img class="icon"  src="/assets/site_images/icons/github-480.png"  alt="icon not found">
+                        <p class="copyright text-white">Github</p>
+                    </a>
+                </li>
                 
-                <ul>
-                    <li>
-                        <a href="{{site.github_link}}">
-                            GitHub
-                        </a>
-                    </li>
-                    
-                    <li>
-                        <a href="{{site.github_link}}">
-                            Linked In 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:{{site.mail_id}}">
-                            Mail
-                        </a>
-                    </li>
-                    <li>
-                        <a href="{{site.github_link}}">
-                            <img class="contact-icon"  src="/assets/site_images/icons/linkedin.svg"  alt="icon not found">
-                        </a>
-                    </li>
-                </ul>
-                <div class="copyright">
-                    <p class="text-white">2018 © Madhusudhan</p>
-                </div>
-            </div>
+                <li>
+                    <a href="{{site.github_link}}">
+                        <img class="icon"  src="/assets/site_images/icons/linkedin-480.png"  alt="icon not found">
+                        <p class="copyright text-white">Linkedin</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:{{site.mail_id}}">
+                        <img class="icon"  src="/assets/site_images/icons/mail-480.png"  alt="icon not found">
+                        <p class="copyright text-white">Mail</p>
+                    </a>
+                </li>
+            </ul>
         </footer>
     </div>
+
+    <div class="row copyright-div">
+        <img class="icon"  src="/assets/site_images/icons/copyright-100.png"  alt="icon not found">
+        <p class="copyright text-white">2018 © Madhusudhan</p>
+    </div>
+
+</div>

@@ -1,50 +1,82 @@
----
-layout: default
----
-
-<!--Including custom styles-->
-<link rel="stylesheet" href="/assets/css/post.css">
-
-<!--Including the syntax for the code-->
-<link href="/assets/css/syntax.css" rel="stylesheet" >
-
-<div  class = "container-fluid">
-	<div  class = "row">
-	
-		<div class="col-3 position-fixed sidebar" >
-			{% include aside_bar.html %}
-		</div>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
 		
-		
-		<!-- Empty Space  for aside bar not to cover up-->
-		<div class="col-3">  
-			<!-- Empty Column -->
-		</div>
-		
-	
-		<!-- post Content -->
-		<div class="col-8 content-column page-content">
-			
-			{% include fork_git_links.html%}
-			
-			{{content}}
-			
-			{% if site.comments %}
-			{% include disqus.html %}
-			{% endif %}
-			
-                            
-		</div>
-		
-	
-		<!-- Empty Space -->
-		<div class="col-1">  
-			<!-- Empty Column -->
-		</div>
-	
-	</div>
+		<!--character encoding for HTML document -->
+		<meta charset="UTF-8">
 
-</div>
+		<!--For make IE use latest rendering engine -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+		<!-- Set the page to the width of the device and set the zoon level -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!--Including bootstrap js file-->
+		<script src="/assets/css/bootstrap/js/bootstrap.js"></script>
+		
+		<!--Including bootstrap css file-->
+		<link rel="stylesheet" href="/assets/css/bootstrap/css/bootstrap.css">
+	
+		<!--Including custom styles-->
+		<link rel="stylesheet" href="/assets/css/main.css">
+
+		<!--Link to Icon -->
+		<link rel="shortcut icon"  href="{{page.image}}" type="image/png">
+		
+		<!--Tile of Page-->
+		<title>{{page.title}}</title>
+
+		<!--Including custom styles-->
+		<link rel="stylesheet" href="/assets/css/post.css">
+
+		<!--Including the syntax for the code-->
+		<link href="/assets/css/syntax.css" rel="stylesheet" >
+
+	</head>
+	<body>
+		<div  class = "container-fluid">
+			<div  class = "row">
+			
+				<div class="col-3 position-fixed sidebar" >
+					{% include aside_bar.html %}
+				</div>
+				
+				
+				<!-- Empty Space  for aside bar not to cover up-->
+				<div class="col-3">  
+					<!-- Empty Column -->
+				</div>
+				
+			
+				<!-- post Content -->
+				<div class="col-8 content-column page-content">
+					
+					{% include fork_git_links.html%}
+					
+					{{content}}
+					
+					{% if site.comments %}
+					{% include disqus.html %}
+					{% endif %}
+					
+									
+				</div>
+				
+			
+				<!-- Empty Space -->
+				<div class="col-1">  
+					<!-- Empty Column -->
+				</div>
+			
+			</div>
+		
+		</div>	
+	</body>
+</html>
+
+
+
+
 
 
 
