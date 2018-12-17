@@ -5,6 +5,11 @@ date: 2018-10-07 20:47:28 +0530
 categories: Linear Regression 
 description : Linear Regression is the process of fitting a line to the dataset. 
 image : /assets/images/linear_regression_comparison_framework_vs_scratch_files/title_image.png
+fork_repo: https://github.com/phani1995/linear_regression/fork
+star_repo: https://github.com/phani1995/linear_regression/
+source: https://github.com/phani1995/linear_regression/blob/master/src/linear_regression_from_scratch_statistical_approach.py
+notebook: https://github.com/phani1995/linear_regression/blob/master/src/linear_regression_comparison_framework_vs_scratch.ipynb
+medium_link: none
 ---
 
 # Linear Regression Comparison between framework and scratch
@@ -222,8 +227,8 @@ We are splitting the whole dataset into training and test set where training set
 
 
 ```python
-X_train,X_test = np.split(X,indices_or_sections = [int(len(X)*0.2)])
-y_train,y_test = np.split(y,indices_or_sections = [int(len(X)*0.2)])
+X_train,X_test = np.split(X,indices_or_sections = [int(len(X)*0.8)])
+y_train,y_test = np.split(y,indices_or_sections = [int(len(X)*0.8)])
 ```
 
 # Reshaping the numpy arrays since the scikit learn model expects 2-D array in further code

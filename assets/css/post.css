@@ -6,6 +6,38 @@ img{
     width: 50%;
 }
 
+
+.fork-star-button-div{
+	margin-left: auto;
+	margin-right: 0px;
+}
+
+.source-button{
+	margin: 5px;
+	display:inline-block;
+}
+
+.notebook-button{
+	margin: 5px;
+	display:inline-block;
+}
+.fork-button{
+	margin: 5px;
+	display:inline-block;
+}
+.star-button{
+	margin: 5px;
+	display:inline-block;
+}
+
+.links-div{
+	
+	margin: 10px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+
+
 .icon{
 	height: 60px;
 	width: 60px;

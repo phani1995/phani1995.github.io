@@ -1,10 +1,15 @@
 ---
 layout: post
-title:  "Linear Regression from Scratch Statistical Approach"
-date: 2018-09-16 20:47:28 +0530
+title:  "Linear Regression from scratch statistical approach"
+date: 2018-09-23  20:47:28 +0530
 categories: Linear Regression 
 description : Linear Regression is the process of fitting a line to the dataset. 
 image : /assets/images/linear-regression-from-scratch-statistical-approach-images/title_image.png
+fork_repo: https://github.com/phani1995/linear_regression/fork
+star_repo: https://github.com/phani1995/linear_regression/
+source: https://github.com/phani1995/linear_regression/blob/master/src/linear_regression_from_scratch_statistical_approach.py
+notebook: https://github.com/phani1995/linear_regression/blob/master/src/linear_regression_from_scratch_statistical_approach.ipynb
+medium_link: none
 ---
 
 # Linear Regression from Scratch Statistical Approach
