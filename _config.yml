@@ -13,6 +13,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
+
 title: Phani Madhusudhan's Blog
 email: phani.madhusudhan@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -26,7 +28,7 @@ homepage : "https://phani1995.github.io"
 #Contact Details
 twitter_username: jekyllrb
 github_username:  phani.madhusudhan@gmail
-github_link : https://github.com/phanimadhusudhanthontepu
+github_link : https://github.com/phani1995
 github_projects_link : https://github.com/phani1995?tab=repositories
 mail_id : phani.madhusudhan@gmail.com
 
@@ -38,8 +40,6 @@ highlighter: rouge
 theme: minima
 plugins:
   - jekyll-feed
-
-
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
