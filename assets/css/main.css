@@ -21,17 +21,35 @@ pre {
     border-radius: 4px;
 }
 
-
-
-.card-img{
-	float: left;
-	padding: 0;
-	margin : 0;
+.post{
+	
+	color: #ffffff;
+	transition: all .3s ease-in-out;
+	border-top-right-radius: 25px;
+	border-top-left-radius: 25px;
+	border-bottom-right-radius: 25px;
+	border-bottom-left-radius: 25px;
+	background: #212529;
+	margin: 50px;
+	
 }
 
-.card-text{
-	float: right;
+.post:hover {
+    transform: scale(1.025); 
 }
+
+.post-image-division{
+	display: inline-block;
+}
+
+.post-text-division{
+	display: inline-block;
+	margin: 30px;
+	padding: 0px;
+}
+
+
+
 
 .contact-icon{
 	width: 20 ;
@@ -48,19 +66,7 @@ pre {
 	padding: 50px
 }
 
-.post{
-	color: #ffffff;
-	transition: all .3s ease-in-out;
-	border-top-right-radius: 25px;
-	border-top-left-radius: 25px;
-	border-bottom-right-radius: 25px;
-	border-bottom-left-radius: 25px;
-	background: #212529;
-}
 
-.post:hover {
-    transform: scale(1.025); 
-}
 
 .sidebar{
 	background-color: #343a40 !important;
@@ -73,8 +79,6 @@ pre {
 	border-radius: 50%;
 	padding : 5px
 }
-
-
 
 .content-column{
 	padding-top :50px;

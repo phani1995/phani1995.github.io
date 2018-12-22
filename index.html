@@ -3,31 +3,34 @@ layout: main
 title: Phani Madhusudhan Thontepu Site
 date: 2018-10-04
 ---
-{% include canvas.html %}
+
+<div class="canvas-div" >
+	{% include canvas.html %}
+</div>
+
 <ul class="posts">
 	<div class="container">
 		
 		{% for post in site.posts %}
-		<div class ="row">
-			<div class="card text-white bg-dark border-light post "  style="width: 100%; display: table;">
-					<div style="display: table-row">
-						<div style=" display: table-cell;">
-								<img class="card-img img-rounded" style="float: left;" src="{{post.image}}" alt="Card image cap" style="width:128px;height:128px;">
-						</div>
-						<div style="display: table-cell;">  
-								
-								<h5 class="card-title" title="{{ post.title }}">
-										<a href="{{ post.url }}"> {{ post.title }}</a>
-								</h5>
-								
-								<p>{{post.date | date: '%Y, %b %d'}}</p>
+		<div class ="row  post text-white bg-dark border-light ">
+			<div class="display: table-row;">
 				
-								<div class="card-body">
-									<p class="card-text">{{post.description | truncatewords: 15}}</p>
-								</div>
+				<div class='post-image-division'>
+					<img class="img-fluid img-rounded" src="{{post.image}}" alt="Card Title Image Not Found" >
+				</div>
+
+				<div class='post-text-division'>  	
+						<h5  title="{{ post.title }}">
+								<a href="{{ post.url }}"> {{ post.title }}</a>
+						</h5>
+						<p>{{post.date | date: '%Y, %b %d'}}</p>
+						<div>
+							<p >{{post.description | truncatewords: 15}}</p>
 						</div>
-					</div>
+				</div>
+
 			</div>
+		
 		</div>		
 		{% endfor %}
 	</div>
