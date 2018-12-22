@@ -6,6 +6,29 @@ img{
     width: 50%;
 }
 
+@media screen and (min-width: 0px) and (max-width: 768px) {
+	.sidebar{ 
+		display: none; 
+	} 
+}
+  
+@media screen and (min-width: 768px) and (max-width: 300px) {
+	.sidebar{ 
+		display: block; 
+	}   
+}
+
+.nav-bar-img{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+    width:auto;
+}
+
+.nabar-alt{
+	margin-left: -15px;
+	margin-right: -15px;
+}
 
 .fork-star-button-div{
 	margin-left: auto;

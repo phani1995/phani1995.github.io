@@ -11,6 +11,9 @@
 		<!-- Set the page to the width of the device and set the zoon level -->
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+		<!--Including JQuery -->
+		<script src="/assets/js/jquery.js"></script>
+
 		<!--Including bootstrap js file-->
 		<script src="/assets/css/bootstrap/js/bootstrap.js"></script>
 		
@@ -35,21 +38,22 @@
 	</head>
 	<body>
 		<div  class = "container-fluid">
+			
 			<div  class = "row">
 			
-				<div class="col-3 position-fixed sidebar" >
+				<div class="col-xl-3 col-lg-3 col-md-3 position-fixed sidebar" >
 					{% include aside_bar.html %}
 				</div>
 				
 				
 				<!-- Empty Space  for aside bar not to cover up-->
-				<div class="col-3">  
+				<div class="col-xl-3 col-lg-3 col-md-3">  
 					<!-- Empty Column -->
 				</div>
 				
 			
 				<!-- post Content -->
-				<div class="col-8 content-column page-content">
+				<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 content-column page-content">
 					
 					{% include fork_git_links.html%}
 					
@@ -66,7 +70,7 @@
 				
 			
 				<!-- Empty Space -->
-				<div class="col-1">  
+				<div class="col-xl-1 col-lg-1 col-md-1">  
 					<!-- Empty Column -->
 				</div>
 			

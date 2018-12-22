@@ -21,6 +21,12 @@ pre {
     border-radius: 4px;
 }
 
+
+
+.posts{
+	padding: 0px;
+}
+
 .post{
 	
 	color: #ffffff;
@@ -30,7 +36,9 @@ pre {
 	border-bottom-right-radius: 25px;
 	border-bottom-left-radius: 25px;
 	background: #212529;
-	margin: 50px;
+	margin: 10px;
+	margin-top: 50px;
+	margin-bottom: 50px;
 	
 }
 
@@ -49,17 +57,18 @@ pre {
 }
 
 
-
-
 .contact-icon{
 	width: 20 ;
 	height: 20
 }
 
 .sidebar-header {
-	background-color: lightblue;
+	background-color: #00A3FF;
 	border-radius: 25px;
 	padding : 10px;
+}
+.sidebar-footer{
+	margin: 10px;
 }
 
 .page-content{
@@ -72,7 +81,7 @@ pre {
 	background-color: #343a40 !important;
 	margin : 0px;
 	height: 100vh;
-	z-index: 1;
+	z-index: 5;
 }
 
 .sidebar-image{

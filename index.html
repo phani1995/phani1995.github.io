@@ -10,33 +10,4 @@ date: 2018-10-04
 </div>
 
 
-
-  
-
-<ul class="posts">
-	<div class="container">
-		
-		{% for post in site.posts %}
-		<div class ="row  post text-white bg-dark border-light ">
-			<div class="display: table-row;">
-				
-				<div class='post-image-division'>
-					<img class="img-fluid img-rounded" src="{{post.image}}" alt="Card Title Image Not Found" >
-				</div>
-
-				<div class='post-text-division'>  	
-						<h5  title="{{ post.title }}">
-								<a href="{{ post.url }}"> {{ post.title }}</a>
-						</h5>
-						<p>{{post.date | date: '%Y, %b %d'}}</p>
-						<div>
-							<p >{{post.description | truncatewords: 15}}</p>
-						</div>
-				</div>
-
-			</div>
-		
-		</div>		
-		{% endfor %}
-	</div>
-</ul>
+{% include posts.html%}
