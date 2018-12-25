@@ -67,38 +67,8 @@ pre {
 	height: 20
 }
 
-.sidebar-header {
-	background-color: #00A3FF;
-	border-radius: 25px;
-	padding : 10px;
-}
-.sidebar-footer{
-	margin: 10px;
-}
 
-.page-content{
-	padding: 50px
-}
-
-
-
-.sidebar{
-	background-color: #343a40 !important;
-	margin : 0px;
-	height: 100vh;
-	z-index: 5;
-}
-
-.sidebar-image{
-	border-radius: 50%;
-	padding : 5px
-}
-
-.content-column{
-	padding-top :50px;
-}
-
-.aside-bar{
-	padding :10px;
+.card{
+	margin: 20px;
 }
 
