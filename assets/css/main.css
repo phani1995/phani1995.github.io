@@ -50,8 +50,8 @@ pre {
 	display: inline-block;
 }
 .post-image{
-	max-width: 30%;
-	max-height: 30%
+	max-width: 400px;
+	max-height: 250px;
 }
 .post-text-division{
 	display: inline-block;
