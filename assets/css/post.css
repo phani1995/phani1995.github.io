@@ -1,4 +1,4 @@
-
+/*These styles for post content*/
 img{
 	display: block;
 	margin-left: auto;
@@ -20,7 +20,7 @@ img{
 	}   
 }
 
-
+/*These styles for aside bar content*/
 
 .sidebar-header {
 	background-color: #00A3FF;
@@ -35,8 +35,6 @@ img{
 	padding: 50px
 }
 
-
-
 .sidebar{
 	background-color: #343a40 !important;
 	margin : 0px;
@@ -46,7 +44,9 @@ img{
 
 .sidebar-image{
 	border-radius: 50%;
-	padding : 5px
+	padding : 5px;
+	max-width: 100px;
+	max-height: 100px;
 }
 
 .content-column{
