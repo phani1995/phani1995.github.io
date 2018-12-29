@@ -1,21 +1,3 @@
-var visibility = false;
-
-if(window.innerWidth>756)
-{
-    var visibility = true;
-}
-
-var aboveElement = document.getElementById('navigation-bar')
-var aboveElementRect = aboveElement.getBoundingClientRect();
-
-var canvas = document.getElementById('canvas-1');
-var canvasRect = canvas.getBoundingClientRect();
-
-canvas.width  = window.innerWidth - 15;
-canvas.height = window.innerHeight   - aboveElementRect.bottom;
-
-document.getElementById('to-cover-nab-bar').setAttribute("style","height:"+aboveElementRect.bottom+"px");
-
 //Global algorthm varibale
 var algoArray = [
     {
@@ -98,13 +80,31 @@ var algoArray = [
         "url": "linear/regression/2018/09/28/linear_regression_using_scikit_learn.html"}
 ]
 
+var visibility = false;   // Varible for visibility initilizing
+
+if(window.innerWidth>756) // Setting the value of Visibility
+{
+    var visibility = true;
+}
+
+var aboveElement = document.getElementById('navigation-bar') //Getting above Element
+var aboveElementRect = aboveElement.getBoundingClientRect(); //Above Element Dimentions
+
+var canvas = document.getElementById('canvas-1');
+var canvasRect = canvas.getBoundingClientRect();
+
+//Setting Dimentions of Canvas
+canvas.width  = window.innerWidth - 15;
+canvas.height = window.innerHeight - aboveElementRect.bottom;
+
+document.getElementById('to-cover-nab-bar').setAttribute("style","height:"+aboveElementRect.bottom+"px");
 
 
 //Varibles
 var c = canvas.getContext('2d');
 
-var maxRadius = 100;
-var minRadius = 50;
+var maxRadius = 100; //Max Radius of Circle
+var minRadius = 60;  //Min Radius of Circle
 
 var circleInFocus = null;
 var foundCircle = false;
@@ -118,12 +118,13 @@ var mouse = {
 
 //Arrays
 var colorArray = [
-    '#1E4363',
-    '#FCF2CB',
-    '#FFB00D',
-    '#FF8926',
-    '#BC2D19'
+    '#3686C2',
+    '#16953C',
+    '#ACF0F2',
+    '#F3FFE2',
+    '#EB7F00'
 ];
+
 
 //Event Listeners
 window.addEventListener('mousemove',
@@ -135,8 +136,7 @@ window.addEventListener('mousemove',
 
 window.addEventListener('resize',
     function(){
-        
-        console.log(window.innerWidth,visibility)
+    
         if(window.innerWidth>756)
         {
             visibility = true;
@@ -171,7 +171,6 @@ canvas.addEventListener('click',
 function getDistance(x1,y1,x2,y2){
     let xDistance = x2-x1;
     let yDistance = y2-y1;  
-
     return Math.sqrt(Math.pow(xDistance,2)+ Math.pow(yDistance,2));
 }
 
@@ -180,7 +179,6 @@ function rotate(dx,dy, angle) {
         x: dx * Math.cos(angle) - dy * Math.sin(angle),
         y: dx * Math.sin(angle) + dy * Math.cos(angle)
     };
-    //console.log('The is output of rotate function',rotatedVelocities)
     return rotatedVelocities;
 }
 
@@ -199,8 +197,8 @@ function resolveCollision(particle, otherParticle) {
         const angle = -Math.atan2(otherParticle.y - particle.y, otherParticle.x - particle.x);
 
         // Store mass in var for better readability in collision equation
-        const m1 = Math.pow(particle.radius,2)*Math.PI;
-        const m2 = Math.pow(otherParticle.radius,2)*Math.PI;
+        const m1 = Math.pow(particle.radius,2)*Math.PI /10;
+        const m2 = Math.pow(otherParticle.radius,2)*Math.PI/10;
 
         // Velocity before equation
         const u1 = rotate(particle.dx,particle.dy, angle);
@@ -264,11 +262,11 @@ function Circle(x,y,dx,dy,radius,name){
         this.y+= this.dy;
 
         //Filling text
-        var fontSize = (this.radius*15)/50
-        var gap = fontSize;
+        var fontSize = (this.radius*20)/minRadius
+    
         
         ctx = canvas.getContext("2d");
-        ctx.font = fontSize+'pt Calibri';
+        ctx.font = fontSize +'px Calibri';
         ctx.fillStyle = 'black';
         ctx.textAlign = 'center';
 
@@ -284,15 +282,27 @@ function Circle(x,y,dx,dy,radius,name){
         }
         for (var i = 0;i<nameArray.length;i++)
         {
-            yValueArray.push(i*gap)
+            yValueArray.push(i*fontSize)
         }
-
-        for (var i = 0;i<nameArray.length;i++)
+        if(this.name.startsWith("Natural"))
         {
-            ctx.fillText(nameArray[i], this.x, this.y+yValueArray[i]);
+            var totalFontHeight = Math.max(...yValueArray) + fontSize
+            console.log(yValueArray,Math.max(...yValueArray),totalFontHeight)
+            var shift = totalFontHeight/2;
+            for (var i = 0;i<nameArray.length;i++)
+            {
+                yValueArray[i] = yValueArray[i] +40 // + (totalFontHeight)/2+fontsize/4;
+            }
+            //console.log(yValueArray)
         }
         
 
+        for (var i = 0;i<nameArray.length;i++)
+        {
+            ctx.fillText(nameArray[i], this.x, this.y-this.radius + yValueArray[i]);
+        }
+
+        //Zooming the Circles
         if(Math.abs(mouse.x - this.x) < this.radius && Math.abs(mouse.y - this.y) < this.radius)
         {
             if(this.radius < maxRadius)

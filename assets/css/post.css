@@ -1,4 +1,19 @@
 /*These styles for post content*/
+
+pre {
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
 img{
 	display: block;
 	margin-left: auto;
@@ -43,14 +58,27 @@ img{
 }
 
 .sidebar-image{
+	/*Overiding element properties*/
+	padding: 0px;
+
 	border-radius: 50%;
-	padding : 5px;
 	max-width: 100px;
 	max-height: 100px;
+	margin: 35px;
 	margin-left: auto;
 	margin-right: auto;
 	display: block;
+	box-shadow:
+	0 0 1px 10px rgba(52,58,64,0.3), 
+	0 0 1px 20px rgba(52,58,64,0.2),
+	0 0 1px 30px rgba(52,58,64,0.1);
+	
+
+
 }
+
+
+
 
 .content-column{
 	padding-top :50px;
@@ -70,6 +98,8 @@ img{
 	margin: 5px;
 	display:inline-block;
 }
+
+
 
 .notebook-button{
 	margin: 5px;
